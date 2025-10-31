@@ -7,7 +7,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import ru.netology.cloud.controller.AuthController;
 import ru.netology.cloud.domain.User;
-import ru.netology.cloud.dto.LoginRequest;
 import ru.netology.cloud.service.TokenService;
 import ru.netology.cloud.service.UserService;
 
