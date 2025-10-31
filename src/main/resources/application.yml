@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /cloud
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cloud
+    username: cloud
+    password: cloud
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+storage:
+  root-dir: ./storage
+
+security:
+  token:
+    ttl-minutes: 120
+
